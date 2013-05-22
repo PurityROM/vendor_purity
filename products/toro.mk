@@ -1,0 +1,29 @@
+# Inherit AOSP device configuration for toro.
+$(call inherit-product, device/samsung/toro/full_toro.mk)
+
+# Inherit common product files.
+$(call inherit-product, vendor/purity/config/common.mk)
+
+# Setup device specific product configuration.
+PRODUCT_NAME := purity_toro
+PRODUCT_BRAND := google
+PRODUCT_DEVICE := toro
+PRODUCT_MODEL := Galaxy Nexus
+PRODUCT_MANUFACTURER := samsung
+
+PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=mysid BUILD_ID=JDQ39 BUILD_FINGERPRINT="google/mysid/toro:4.2.2/JDQ39/573038:user/release-keys" PRIVATE_BUILD_DESC="mysid-user 4.2.2 JDQ39 573038 release-keys" BUILD_NUMBER=573038
+
+# Inherit common build.prop overrides
+-include vendor/purity/config/common_versions.mk
+
+# Inherit CDMA common stuff
+$(call inherit-product, vendor/purity/config/cdma.mk)
+
+# Copy vzw login 
+PRODUCT_COPY_FILES +=  \
+    vendor/purity/proprietary/toro/app/VerizonLogin.apk:system/app/VerizonLogin.apk \
+    vendor/purity/proprietary/toro/lib/libmotricity.so:system/lib/libmotricity.so \
+    vendor/purity/proprietary/toro/app/VerizonSSO.apk:system/app/VerizonSSO.apk
+
+# Inherit media effect blobs
+-include vendor/purity/config/common_media_effects.mk
