@@ -3,3 +3,5 @@ add_lunch_combo purity_toroplus-user
 add_lunch_combo purity_maguro-user
 add_lunch_combo purity_mako-user
 add_lunch_combo purity_grouper-user
+add_lunch_combo purity_manta-user
+
