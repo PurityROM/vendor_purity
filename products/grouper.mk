@@ -1,4 +1,4 @@
-# Inherit AOSP device configuration for maguro.
+# Inherit AOSP device configuration for grouper.
 $(call inherit-product, device/asus/grouper/full_grouper.mk)
 
 # Inherit common product files.

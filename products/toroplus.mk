@@ -1,4 +1,4 @@
-# Inherit AOSP device configuration for toro.
+# Inherit AOSP device configuration for toroplus.
 $(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
 # Inherit common product files.

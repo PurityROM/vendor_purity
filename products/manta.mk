@@ -1,4 +1,4 @@
-# Inherit AOSP device configuration for maguro.
+# Inherit AOSP device configuration for manta.
 $(call inherit-product, device/samsung/manta/full_manta.mk)
 
 # Inherit common product files.
