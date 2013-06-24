@@ -16,6 +16,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mantaray BUILD_FINGERPRINT=google/m
 # Inherit common build.prop overrides
 -include vendor/purity/config/common_versions.mk
 
+# Common Applications
+PRODUCT_COPY_FILES += \
+    vendor/purity/proprietary/common/app/Torch.apk:system/app/Torch.apk
+
 # gps
 PRODUCT_COPY_FILES += \
     vendor/purity/proprietary/common/etc/gps.conf:system/etc/gps.conf
