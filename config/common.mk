@@ -36,7 +36,7 @@ PRODUCT_COPY_FILES += \
 # Common Applications
 PRODUCT_COPY_FILES += \
     vendor/purity/proprietary/common/app/PurityWallpapers.apk:system/app/PurityWallpapers.apk \
-    vendor/purity/proprietary/common/app/Superuser.apk:system/app/Superuser.apk
+    vendor/purity/proprietary/common/app/SuperSU.apk:system/app/SuperSU.apk
 
 # Common Keyboard w/ Gestures
 PRODUCT_COPY_FILES += \
