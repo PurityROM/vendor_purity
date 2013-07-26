@@ -6,10 +6,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/purity/proprietary/common/etc/gps-cdma.conf:system/etc/gps.conf
 
-# Common Applications
-PRODUCT_COPY_FILES += \
-    vendor/purity/proprietary/common/app/babel.apk:system/app/babel.apk \
-    vendor/purity/proprietary/common/app/Torch.apk:system/app/Torch.apk
-
 PRODUCT_PROPERTY_OVERRIDES += \
     gsm.current.phone-type=2

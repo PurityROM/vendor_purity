@@ -24,32 +24,17 @@ PRODUCT_PACKAGES += \
        ThemeChooser \
        com.tmobile.themes
 
-# DSPManager and libs necessary for it
-PRODUCT_PACKAGES += \
-    DSPManager \
-    libcyanogen-dsp \
-    audio_effects.conf
-
 PRODUCT_COPY_FILES += \
        vendor/purity/proprietary/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
 
-# Common Applications
-PRODUCT_COPY_FILES += \
-    vendor/purity/proprietary/common/app/PurityWallpapers.apk:system/app/PurityWallpapers.apk \
-    vendor/purity/proprietary/common/app/Superuser.apk:system/app/Superuser.apk
-
 # Common Keyboard w/ Gestures
 PRODUCT_COPY_FILES += \
-    vendor/purity/proprietary/common/app/LatinIME.apk:system/app/LatinIME.apk \
-    vendor/purity/proprietary/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+    vendor/purity/proprietary/common/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \
+    vendor/purity/proprietary/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
  
 # Copy bootanimation
 PRODUCT_COPY_FILES += \
     vendor/purity/proprietary/common/media/bootanimation.zip:system/media/bootanimation.zip
-
-# Common Binary files
-PRODUCT_COPY_FILES += \
-    vendor/purity/proprietary/common/xbin/su:system/xbin/su
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \

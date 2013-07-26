@@ -11,13 +11,10 @@ PRODUCT_DEVICE := maguro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=yakju BUILD_FINGERPRINT="google/yakju/maguro:4.2.2/JDQ39/573038:user/release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=takju BUILD_FINGERPRINT="google/takju/maguro:4.3/JWR66V/737497:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.mcc_fallback=262
-
-# Inherit common build.prop overrides
--include vendor/purity/config/common_versions.mk
 
 # Inherit media effect blobs
 -include vendor/purity/config/common_media_effects.mk
