@@ -18,15 +18,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES := \
     Stk
 
-# T-Mobile theme engine
-PRODUCT_PACKAGES += \
-       ThemeManager \
-       ThemeChooser \
-       com.tmobile.themes
-
-PRODUCT_COPY_FILES += \
-       vendor/purity/proprietary/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
-
 # Common Keyboard w/ Gestures
 PRODUCT_COPY_FILES += \
     vendor/purity/proprietary/common/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \

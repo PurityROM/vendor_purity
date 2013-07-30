@@ -16,6 +16,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=takju BUILD_FINGERPRINT="google/tak
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.mcc_fallback=262
 
+# Applications
+PRODUCT_COPY_FILES += \
+    vendor/purity/proprietary/common/app/Torch.apk:system/app/Torch.apk
+
 # Inherit media effect blobs
 -include vendor/purity/config/common_media_effects.mk
 
