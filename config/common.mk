@@ -37,12 +37,12 @@ PRODUCT_PACKAGES := \
 
 # Common Keyboard w/ Gestures - Common lib
 PRODUCT_COPY_FILES += \
-    vendor/purity/proprietary/common/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \
+    vendor/purity/proprietary/common/app/LatinIME.apk:system/app/LatinIME.apk \
     vendor/purity/proprietary/common/lib/libjni_eglfence.so:system/lib/libjni_eglfence.so \
     vendor/purity/proprietary/common/lib/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
     vendor/purity/proprietary/common/lib/libjni_mosaic.so:system/lib/libjni_mosaic.so \
-    vendor/purity/proprietary/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
- 
+    vendor/purity/proprietary/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+
 # Copy bootanimation
 PRODUCT_COPY_FILES += \
     vendor/purity/proprietary/common/media/bootanimation.zip:system/media/bootanimation.zip
