@@ -13,6 +13,10 @@ PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT=google/occam/mako:4.3/JWR66V/737497:user/release-keys PRIVATE_BUILD_DESC="occam-user 4.3 JWR66V 737497 release-keys"
 
+# Applications
+PRODUCT_COPY_FILES += \
+    vendor/purity/proprietary/common/app/Torch.apk:system/app/Torch.apk
+
 # Inherit media effect blobs
 -include vendor/purity/config/common_media_effects.mk
 
