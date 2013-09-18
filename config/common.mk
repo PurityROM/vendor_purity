@@ -21,6 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20 \
     pm.sleep_mode=0 \
     ro.config.nocheckin=1 \
+    dalvik.vm.debug.alloc=0 \
     ro.config.hwfeature_wakeupkey=0 \
     ro.kernel.android.checkjni=0 \
     ro.kernel.checkjni=0 \
