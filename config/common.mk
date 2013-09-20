@@ -36,11 +36,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES := \
     Stk
 
+# T-Mobile theme engine
+PRODUCT_PACKAGES += \
+       ThemeManager \
+       ThemeChooser \
+       com.tmobile.themes
+
 # DSPManager and libs necessary for it
 PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf
+
+PRODUCT_COPY_FILES += \
+       vendor/purity/proprietary/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
 
 # Common Keyboard w/ Gestures - Common lib
 PRODUCT_COPY_FILES += \
