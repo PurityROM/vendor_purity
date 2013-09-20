@@ -48,9 +48,6 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf
 
-PRODUCT_COPY_FILES += \
-       vendor/purity/proprietary/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
-
 # Common Keyboard w/ Gestures - Common lib
 PRODUCT_COPY_FILES += \
     vendor/purity/proprietary/common/app/LatinIME.apk:system/app/LatinIME.apk \
