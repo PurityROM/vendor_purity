@@ -17,15 +17,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Build.Prop Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
     net.bt.name=Android \
-    ro.ril.disable.power.collapse=0 \
-    ro.vold.umsdirtyratio=20 \
-    pm.sleep_mode=0 \
-    ro.config.nocheckin=1 \
-    dalvik.vm.debug.alloc=0 \
-    ro.config.hwfeature_wakeupkey=0 \
-    ro.kernel.android.checkjni=0 \
-    ro.kernel.checkjni=0 \
-    ro.max.fling_velocity=15000 \
     ro.media.enc.hprof.vid.bps=8000000 \
     ro.media.enc.hprof.vid.fps=65 \
     ro.media.dec.jpeg.memcap=8000000 \
